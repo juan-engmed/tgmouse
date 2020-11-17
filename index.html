@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Mouse</title>
+    
+    <meta property="og:type" content="website"/>
+		<meta property="og:title" content="TG Mouse UFJF"/>
+		<meta property="og:description" content="Calculadora Arco Esteriotáxico para Roedores"/>
+    <script src="https://kit.fontawesome.com/637632814a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+</head>
+
+<body>
+
+  <header class="tgmenu">
+
+    <nav class='tgHeader'>
+      <div class="nav-wrapper  container">
+        <a href="index.html" class="brand-logo"><img id='logo' src="./img/logotgmouse1.png" alt="Logo"></a>
+
+        <!-- Código para o Ícone Menu Mobile-->
+        <a href="#" data-activates="mobile-demo" class="button-collapse left"><i class="material-icons">menu</i></a>
+        <!-- Fim Código para o Ícone Menu Mobile-->
+
+        <ul class="right hide-on-med-and-down menu_lais">
+          
+          <li><a href="#formulario"><i class='material-icons left ico_tg'>person</i>Cálculo</a></li>
+          
+          <li><a href="#equipe"><i class='material-icons left ico_tg'>
+            account_circle</i>Equipe Técnica</a></li>
+    
+          
+        </ul>
+
+        <ul class="side-nav right " id="mobile-demo">
+          
+          <li class="active"><a href="#formulario"><i class='material-icons left ico_tg'>person</i>Cálculo</a></li>
+                     
+        </ul>
+      </div>
+    </nav>  
+
+  </header>
+ 
+  
+  
+
+    <div class="container center calculadora z-depth-3">
+      <form id= "formulario">
+        <fieldset>
+            <legend class='legenda'>Calculadora TG Mouse</legend><br>
+            
+            <label class='coord' for="dv">DV</label><br>
+            <input type= "textbox"  name="dv" id='dv' /><br><br>
+            <label class='coord' for="AP">AP</label><br>
+            <input type= "textbox"  name="ap" id='ap' /><br><br>
+
+            
+            <div class="botoes">
+            <a class="waves-effect waves-light btn b1" onclick='calcular()'><i class="material-icons left">calculate
+
+            </i>Calcular</a>
+            
+          </div>
+
+          <div class="resultado">
+          <div class="row center">
+            <div class="divider"></div>
+            <h5> Resultado para coordenadas</h5>
+            
+          <div class="col s12 m4">
+            <!-- Promo Content 1 goes here -->
+            <label class='coord'  for="centimetros">AP</label><br>
+            <input type= "textbox"  name="resultap" id='resultAP' /><br>
+          </div>
+          <div class="col s12 m4">
+            <label class='coord'  for="resultmll">ML'</label><br>
+            <input type= "textbox"  name="mll" id='resultMLL'/><br>
+            <!-- Promo Content 2 goes here -->
+          </div>
+          <div class="col s12 m4">
+            <label class='coord' for="resultdvv">DV'</label><br>
+            <input type= "textbox"  name="dvv" id='resultDVV' /><br>
+            
+          </div>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn b2" onclick="limpa()"><i class="material-icons left">backspace</i>Limpar</a>
+        </fieldset>
+        </form>
+
+    </div>
+
+    <div class="divider"></div>
+    <div class="container" id='equipe'>
+      <div class="section">
+        <h5 class="titulo center">Equipe Técnica</h5>
+        <!--   Icon Section   -->
+        <div class="row inicioequipe">
+          <div class="col s12 m4">
+            <div class="center">
+              <img src="./img/marcelo.jpg" alt="allan" id='equipefoto'>
+
+              <h5 class="center">Marcelo Quesado</h5>
+              <a href="http://lattes.cnpq.br/7912101203824402" target="blank"><img src="./img/logolattes.png" alt="allan" id='curriculo'></a>
+              <a href="https://www.linkedin.com/in/marcelo-quesado-filgueiras-411ba833" target="blank"><img src="./img/linkedin.png" alt="allan" id='curriculo'></a>
+              <div class="divider"></div>
+  
+              <p class="light">Doutorando no Centro de Biologia
+                da Reprodução UFJF. Graduado em Medicina pela Universidade Federal de Juiz de Fora. 
+                Residência Médica em Neurocirurgia e Neurologia no Hospital da Policia Militar do Estado do Rio de Janeiro (1991). Mestrado em Ciências Biológicas (Zoologia)
+                 com foco em comportamento, pela Universidade Federal de Juiz de Fora. </p>
+            </div>
+          </div>
+  
+          <div class="col s12 m4">
+            <div class="center">
+              <img src="./img/juan.png" id='equipefoto' alt="juan" >
+              <h5 class="center">Juan Oliveira</h5>
+              <a href="http://lattes.cnpq.br/9171696161515493" target="blank"><img src="./img/logolattes.png" alt="allan" id='curriculo'></a>
+              <a href="https://www.linkedin.com/in/juan-oliveira-911a2592/" target="blank"><img src="./img/linkedin.png" alt="allan" id='curriculo'></a>
+              <div class="divider"></div>
+  
+              <p class="light">Graduando em Engenharia Elétrica pela Universidade Federal de Juiz de Fora, 
+                Graduando em Tecnologia em Internet das Coisas pela Faculdade Cruzeiro do Sul, Fundador da Liga Acadêmica de Medicina e Tecnologia UFJF,
+                Membro da Sociedade Brasileira de Engenharia Biomédica.
+              </p>
+            </div>
+          </div>
+  
+          <div class="col s12 m4">
+            <div class="center">
+              <img src="./img/alan.jpg" id='equipefoto' alt="allan" >
+              <h5 class="center">Allan Landau</h5>
+              <a href="http://lattes.cnpq.br/1458384763503313" target="blank"><img src="./img/logolattes.png" alt="allan" id='curriculo'></a>
+              <a href="https://www.linkedin.com/in/allan-landau-de-carvalho-hilgemberg-3a418a54/" target="blank"><img src="./img/linkedin.png" alt="allan" id='curriculo'></a>
+              <div class="divider"></div>
+  
+              <p class="light">Mestrando em Ciência da Computação pela Universidade Federal de Juiz de Fora (UFJF)/Inteligência Computacional;
+                Pós-graduando em Engenharia Mecatrônica pela Universidade Católica de Petrópolis (UCP/IPETEC)
+                Engenheiro Mecatrônico pelo IF Sudeste MG - Campus Juiz de Fora;
+                Graduando em Análise e Desenvolvimento de Sistemas pelas Faculdades Integradas Vianna Júnior</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12 center">
+        <a href="index.html" class="brand-logo center"><img id='logo' src="./img/logotgmouse1.png" alt="Logo"></a>
+        
+        <p class="grey-text text-lighten-4 center">Desenvolvido em parceria com o Centro de Biologia da Reprodução da Universidade Federal de Juiz de Fora</p>
+      </div>
+      <div class="col l4 offset-l2 s12 center">
+        
+        <ul>
+          <a href="https://www2.ufjf.br/cbr/" target="blank" class="brand-logo"><img id='logo' src="./img/ufjf.png" alt="Logo" id='ufjf'></a>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<script>
+
+  function calcular(){
+
+
+  var dv=parseFloat(document.getElementById("dv").value);
+  var ap=parseFloat(document.getElementById("ap").value);
+
+var dvv = (dv/0.9848).toFixed(2);
+  
+var mll = (0.1736*dvv).toFixed(2);
+
+  document.getElementById('resultAP').value = ` + ${ap}`;
+  document.getElementById('resultMLL').value = ` ± ${mll}`;
+  document.getElementById('resultDVV').value = ` - ${dvv}`;
+  
+}
+
+function limpa() {
+document.getElementById('dv').value="";
+document.getElementById('ap').value="";
+document.getElementById('resultAP').value="";
+document.getElementById('resultAP').value="";
+document.getElementById('resultMLL').value="";
+document.getElementById('resultDVV').value="";
+
+}
+</script>
+
+  
+</body>
+
+</html>

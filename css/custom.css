@@ -1,0 +1,71 @@
+#peso {
+    color: black;
+}
+
+.tgHeader{
+    background: #3F51B5
+}
+
+#logo{
+    padding-top: 5px;
+    width: 130px;
+}
+
+.icotgmouse{
+    width: 14px;
+}
+
+.calculadora{
+
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+#id{
+    width: 10px;
+}
+
+.botoes{
+    margin-top: 15px;
+}
+
+.b1, .b2{
+    background: #3F51B5;
+}
+
+.resultado{
+    margin-top:30px;
+}
+
+.coord {
+    font-size: 25px;
+}
+
+.legenda {
+    font-size: 25px;
+}
+
+#formulario{
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #3F51B5 ;
+}
+
+#equipefoto{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.inicioequipe{
+    margin-top: 15px;
+}
+
+#curriculo {
+
+    width: 50px;
+}
